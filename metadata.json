@@ -1,0 +1,5 @@
+{
+  "name": "NeoBank Secure POC",
+  "description": "A proof-of-concept banking system demonstrating two-tier architecture, SHA-256 security, and creative glassmorphism UI.",
+  "requestFramePermissions": []
+}
