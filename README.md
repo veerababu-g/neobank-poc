@@ -1,20 +1,53 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+Project Overview
 
-This contains everything you need to run your app locally.
+This Proof-of-Concept simulates a simplified banking system with:
 
-View your app in AI Studio: https://ai.studio/apps/drive/1HljTPBJWribDDdvNmQYR1FTouLYUWVKE
+✔ Two-tier architecture
 
-## Run Locally
+System 1 – Gateway
+Validates requests + card range routing
 
-**Prerequisites:**  Node.js
+System 2 – Core Banking
+Validates card, PIN, balance, processes transactions
+
+✔ Role-based Dashboard (React + Vite)
+
+Customer:
+
+View balance
+
+View personal transaction history
+
+Perform top-up transactions
+
+Super Admin:
+
+Monitor ALL system transactions
+
+✔ Security
+
+SHA-256 PIN hashing
+
+No plain-text PIN storage
+
+No plain-text PIN logging
+
+In-memory DB using H2
+
+✔ Modern stack
+Layer	Tech
+Gateway	Spring Boot 3 (Java 17)
+Core Banking	Spring Boot 3 + H2
+UI	React + Vite + TypeScript
+Styling	Custom Glassmorphism CSS
+Build Tools	Maven + npm
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+
+npm install
+npm run dev
+
+Demo Login
+username :admin 
+password : admin
